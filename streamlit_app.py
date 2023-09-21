@@ -1,4 +1,4 @@
-impoort streamlit as st 
+import streamlit as st 
 import random
 st.title("おみくじアプリ")
 if st.button("おみくじを引く"):
