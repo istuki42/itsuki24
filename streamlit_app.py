@@ -30,18 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-import streamlit as st
-
-
-def main():
-    # 誕生日を入力する
-    birthday = st.text_input("誕生日を入力してください：")
-
-    # 運勢を表示する
-    fortune = get_fortune(birthday)
-    st.write(f"{fortune}の運勢は、{fortune}です。")
-
-
-if __name__ == "__main__":
-    main()
