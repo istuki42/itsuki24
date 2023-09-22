@@ -18,7 +18,6 @@ def get_fortune(birthday):
     }
     return zodiac[f"{year}-{month}-{day}"]
 
-import streamlit as st
 def main():
     # 誕生日を入力する
     birthday = input("誕生日を入力してください：")
@@ -26,6 +25,20 @@ def main():
     # 運勢を表示する
     fortune = get_fortune(birthday)
     print(f"{fortune}の運勢は、{fortune}です。")
+
+
+if __name__ == "__main__":
+    main()
+import streamlit as st
+
+
+def main():
+    # 誕生日を入力する
+    birthday = st.text_input("誕生日を入力してください：")
+
+    # 運勢を表示する
+    fortune = get_fortune(birthday)
+    st.write(f"{fortune}の運勢は、{fortune}です。")
 
 
 if __name__ == "__main__":
