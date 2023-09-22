@@ -18,7 +18,7 @@ def get_fortune(birthday):
     }
     return zodiac[f"{year}-{month}-{day}"]
 
-
+import streamlit as st
 def main():
     # 誕生日を入力する
     birthday = input("誕生日を入力してください：")
